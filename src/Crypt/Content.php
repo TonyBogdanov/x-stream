@@ -28,7 +28,21 @@ class Content {
      */
     public static function encrypt( string $value, int $offset, Key $key ): string {
 
-        xor_string( $value, $key->getKey(), $offset );
+        if ( function_exists( 'xor_string' ) ) {
+
+            xor_string( $value, $key->getKey(), $offset );
+            return $value;
+
+        }
+
+        $key = $key->getKey();
+
+        for ( $i = 0, $length = strlen( $value ); $i < $length; $i++ ) {
+
+            $value[ $i ] = $value[ $i ] ^ $key[ ( $i + $offset ) % 64 ];
+
+        }
+
         return $value;
 
     }

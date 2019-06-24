@@ -171,6 +171,8 @@ class Wrapper {
 
     /**
      * @return bool|string
+     * @throws CannotGuessContextException
+     * @throws InvalidContextException
      */
     public function dir_readdir() {
 
@@ -191,7 +193,17 @@ class Wrapper {
 
     }
 
-    public function dir_rewinddir(): bool { $this->notSupported( __METHOD__ ); }
+    public function dir_rewinddir() {
+
+        if ( ! $this->directoryHandle ) {
+
+            return;
+
+        }
+
+        rewinddir( $this->directoryHandle );
+
+    }
 
     /**
      * @param string $path
@@ -284,7 +296,7 @@ class Wrapper {
 
     }
 
-    public function stream_lock( mode $operation ): bool { $this->notSupported( __METHOD__ ); }
+    public function stream_lock( int $operation ): bool { $this->notSupported( __METHOD__ ); }
 
     /**
      * @param string $path
@@ -414,7 +426,17 @@ class Wrapper {
 
     }
 
-    public function unlink( string $path ): bool { $this->notSupported( __METHOD__ ); }
+    /**
+     * @param string $path
+     *
+     * @return bool
+     * @throws Exception
+     */
+    public function unlink( string $path ): bool {
+
+        return unlink( $this->getPhysicalPath( $path ) );
+
+    }
 
     /**
      * @param string $path
