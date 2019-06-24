@@ -1,0 +1,20 @@
+{
+    "name": "tonybogdanov/x-stream",
+    "description": "PHP wrapper for virtual password protected filesystem",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tony Bogdanov",
+            "email": "support@tonybogdanov.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "XStream\\": "src/"
+        }
+    }
+}
