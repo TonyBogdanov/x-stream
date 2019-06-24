@@ -80,7 +80,7 @@ class Factory {
 
         if ( ! is_dir( $path ) ) {
 
-            throw new InvalidMountPathException( $protocol );
+            throw new InvalidMountPathException( $path );
 
         }
 
