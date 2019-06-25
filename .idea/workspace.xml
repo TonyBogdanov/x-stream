@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5000607f-126b-4b23-b879-8e7a6269d318" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wrapper/Wrapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wrapper/Wrapper.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,20 +14,7 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="210">
-                <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -37,6 +24,8 @@
       <find>mkdir</find>
       <find>stat</find>
       <find>stat(</find>
+      <find>_cas</find>
+      <find>notim</find>
     </findStrings>
     <replaceStrings>
       <replace>notImplemented(</replace>
@@ -64,10 +53,10 @@
         <option value="$PROJECT_DIR$/src/Wrapper/Exceptions/InvalidProtocolException.php" />
         <option value="$PROJECT_DIR$/src/Wrapper/Exceptions/InvalidMountPathException.php" />
         <option value="$PROJECT_DIR$/src/Wrapper/Factory.php" />
-        <option value="$PROJECT_DIR$/src/Wrapper/Wrapper.php" />
         <option value="$PROJECT_DIR$/src/Crypt/Key.php" />
         <option value="$PROJECT_DIR$/src/Crypt/Content.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/Wrapper/Wrapper.php" />
       </list>
     </option>
   </component>
@@ -153,15 +142,15 @@
       <workItem from="1561362806537" duration="672000" />
       <workItem from="1561375849086" duration="4503000" />
       <workItem from="1561382663697" duration="394000" />
+      <workItem from="1561445481778" duration="539000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23355000" />
+    <option name="totallyTimeSpent" value="23894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Version Control" order="0" sideWeight="0.5010799" side_tool="true" weight="0.19306667" />
       <window_info id="TODO" order="1" side_tool="true" />
@@ -333,8 +322,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wrapper/Wrapper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        <state relative-caret-position="306">
+          <caret line="319" column="68" selection-start-line="319" selection-start-column="68" selection-end-line="319" selection-end-column="68" />
           <folding>
             <element signature="e#7#254#0#PHP" expanded="true" />
             <element signature="e#284#298#0#PHP" expanded="true" />
@@ -346,7 +335,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="210">
-            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <caret line="10" selection-start-line="10" selection-end-line="10" />
           </first_editor>
           <second_editor />
         </state>

@@ -249,7 +249,28 @@ class Wrapper {
 
     }
 
-    public function stream_cast( int $cast_as ): resource { $this->notSupported( __METHOD__ ); }
+    /**
+     * @param int $cast_as
+     *
+     * @return bool|resource
+     */
+    public function stream_cast( int $cast_as ) {
+
+        if ( $this->fileHandle ) {
+
+            return $this->fileHandle;
+
+        }
+
+        if ( $this->directoryHandle ) {
+
+            return $this->directoryHandle;
+
+        }
+
+        return false;
+
+    }
 
     /**
      * @return bool
