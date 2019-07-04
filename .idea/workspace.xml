@@ -12,9 +12,26 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="DONT_SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Wrapper/Wrapper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="321" column="54" selection-start-line="321" selection-start-column="54" selection-end-line="321" selection-end-column="54" />
+              <folding>
+                <element signature="e#7#254#0#PHP" expanded="true" />
+                <element signature="e#284#298#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -79,7 +96,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -87,10 +103,22 @@
               <item name="x-stream" type="b2602c69:ProjectViewProjectNode" />
               <item name="x-stream" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="x-stream" type="b2602c69:ProjectViewProjectNode" />
+              <item name="x-stream" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="x-stream" type="b2602c69:ProjectViewProjectNode" />
+              <item name="x-stream" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Wrapper" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -143,20 +171,22 @@
       <workItem from="1561375849086" duration="4503000" />
       <workItem from="1561382663697" duration="394000" />
       <workItem from="1561445481778" duration="539000" />
+      <workItem from="1562226464477" duration="248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23894000" />
+    <option name="totallyTimeSpent" value="24142000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Version Control" order="0" sideWeight="0.5010799" side_tool="true" weight="0.19306667" />
       <window_info id="TODO" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49892008" visible="true" weight="0.19296375" />
-      <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.4983678" visible="true" weight="0.19296375" />
+      <window_info active="true" id="Structure" order="4" sideWeight="0.5016322" side_tool="true" visible="true" weight="0.19296375" />
       <window_info id="Terminal" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
@@ -320,17 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wrapper/Wrapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="319" column="68" selection-start-line="319" selection-start-column="68" selection-end-line="319" selection-end-column="68" />
-          <folding>
-            <element signature="e#7#254#0#PHP" expanded="true" />
-            <element signature="e#284#298#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -338,6 +357,17 @@
             <caret line="10" selection-start-line="10" selection-end-line="10" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wrapper/Wrapper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="321" column="54" selection-start-line="321" selection-start-column="54" selection-end-line="321" selection-end-column="54" />
+          <folding>
+            <element signature="e#7#254#0#PHP" expanded="true" />
+            <element signature="e#284#298#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

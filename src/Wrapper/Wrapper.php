@@ -53,15 +53,6 @@ class Wrapper {
     protected $filePath;
 
     /**
-     * @param string $method
-     */
-    protected function notSupported( string $method ) {
-
-        throw new RuntimeException( sprintf( 'Method not supported yet: %s.', $method ) );
-
-    }
-
-    /**
      * @param string|null $hint
      *
      * @return Context
@@ -317,7 +308,17 @@ class Wrapper {
 
     }
 
-    public function stream_lock( int $operation ): bool { $this->notSupported( __METHOD__ ); }
+    /**
+     * @param int $operation
+     *
+     * @return bool
+     */
+    public function stream_lock( int $operation ): bool {
+
+        trigger_error( 'Locking is not implemented.', E_WARNING );
+        return false;
+
+    }
 
     /**
      * @param string $path
@@ -381,11 +382,22 @@ class Wrapper {
 
         }
 
-        return fseek( $this->fileHandle, $whence );
+        return fseek( $this->fileHandle, $offset, $whence );
 
     }
 
-    public function stream_set_option( int $option , int $arg1 , int $arg2 ): bool { $this->notSupported( __METHOD__ ); }
+    /**
+     * @param int $option
+     * @param int $arg1
+     * @param int $arg2
+     *
+     * @return bool
+     */
+    public function stream_set_option( int $option , int $arg1 , int $arg2 ): bool {
+
+        return false;
+
+    }
 
     /**
      * @return array|bool
