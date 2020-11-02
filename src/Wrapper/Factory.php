@@ -12,7 +12,6 @@
 
 namespace XStream\Wrapper;
 
-use Exception;
 use XStream\Crypt\Key;
 use XStream\Util\Path;
 use XStream\Wrapper\Exceptions\FailedToRegisterProtocolException;
@@ -57,14 +56,21 @@ class Factory {
      * @param string $protocol
      * @param string $path
      * @param string $password
+     * @param string $wrapperClass
      *
-     * @throws Exception
      * @throws FailedToRegisterProtocolException
      * @throws InvalidMountPathException
      * @throws InvalidProtocolException
      * @throws ProtocolExistsException
      */
-    public static function register( string $protocol, string $path, string $password ) {
+    public static function register(
+
+        string $protocol,
+        string $path,
+        string $password,
+        string $wrapperClass = Wrapper::class
+
+    ) {
 
         if ( isset( static::$contexts[ $protocol ] ) || in_array( $protocol, stream_get_wrappers(), true ) ) {
 
@@ -86,7 +92,7 @@ class Factory {
 
         static::$contexts[ $protocol ] = new Context( $protocol, Path::normalize( $path ), Key::create( $password ) );
 
-        if ( ! stream_wrapper_register( $protocol, Wrapper::class ) ) {
+        if ( ! stream_wrapper_register( $protocol, $wrapperClass ) ) {
 
             throw new FailedToRegisterProtocolException( $protocol );
 
